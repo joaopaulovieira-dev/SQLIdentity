@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3iKiM/HCYhZsw+s6mgf61XHErVXP0OVx+GjzT9JAIqpHte5ZwnSZZSQO88ZZc8pMG7fjsgsDAiGl8NVixZoVCg==",
+  "dgSpecHash": "87lzb4RBP3yGNduD6L78fzme5NhAyQJlD83bVQny032W/y9z6SsNMwctWq4a0VebjwtUsYGtKXrV8+5gtQDDbA==",
   "success": true,
   "projectFilePath": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApp.Identity\\WebApp.Identity.csproj",
   "expectedPackageFiles": [
