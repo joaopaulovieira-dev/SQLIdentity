@@ -34,7 +34,7 @@ namespace WebApp.Identity
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            services.AddIdentityCore<User>(options =>
+            services.AddIdentityCore<MyUser>(options =>
             {
                 // options.Password.RequireDigit = false;
                 // options.Password.RequireLowercase = false;
