@@ -21,7 +21,7 @@ namespace WebApp.Identity
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+
         }
 
         public Task<MyUser> FindByIdAsync(string userId, CancellationToken cancellationToken)
@@ -36,27 +36,29 @@ namespace WebApp.Identity
 
         public Task<string> GetNormalizedUserNameAsync(MyUser user, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return Task.FromResult(user.NormalizedUserName);
         }
 
         public Task<string> GetUserIdAsync(MyUser user, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return Task.FromResult(user.Id);
         }
 
         public Task<string> GetUserNameAsync(MyUser user, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return Task.FromResult(user.UserName);
         }
 
         public Task SetNormalizedUserNameAsync(MyUser user, string normalizedName, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            user.NormalizedUserName = normalizedName;
+            return Task.CompletedTask;
         }
 
         public Task SetUserNameAsync(MyUser user, string userName, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            user.UserName = userName;
+            return Task.CompletedTask;
         }
 
         public Task<IdentityResult> UpdateAsync(MyUser user, CancellationToken cancellationToken)
