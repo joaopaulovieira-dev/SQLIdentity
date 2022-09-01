@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -11,6 +12,12 @@ namespace WebApp.Identity.Controllers
     [ApiController]
     public class HomeController : Controller
     {
+        private readonly UserManager<MyUser> _userManager;
+
+        public HomeController(UserManager<MyUser> userManager)
+        {
+            _userManager = userManager;
+        }
         public IActionResult Index()
         {
             return View();
@@ -25,6 +32,19 @@ namespace WebApp.Identity.Controllers
         {
             if (ModelState.IsValid)
             {
+                var user = await _userManager.FindByNameAsync(model.UserName);
+
+                if (user == null)
+                {
+                    user = new MyUser()
+                    {
+                        Id = Guid.NewGuid().ToString(),
+                        UserName = model.UserName
+                    };
+
+                    var result = await _userManager.CreateAsync(user, model.Password);
+                }
+
                 return View("Success");
             }
             return View();
