@@ -32,3 +32,4 @@ C:\Development\Asp.NET Core Identity\SQLIdentity\WebApp.Identity\obj\Debug\netco
 C:\Development\Asp.NET Core Identity\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.pdb
 C:\Development\Asp.NET Core Identity\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.genruntimeconfig.cache
 C:\Development\Asp.NET Core Identity\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.csproj.CopyComplete
+C:\Development\Asp.NET Core Identity\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Home\Register.cshtml.g.cs

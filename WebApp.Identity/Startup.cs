@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -42,6 +43,7 @@ namespace WebApp.Identity
                 // options.Password.RequireNonAlphanumeric = false;
                 // options.Password.RequiredLength = 6;
             });
+            services.AddScoped<IUserStore<MyUser>, MyUserStore>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4AEfaJAys5e+OUuTRL/0ZorZiqR9iLUStxszjMaGemVcdDOmKsKwgVNhnuKF5RRIVGQC/LMgOVI9nlkl0Rlxag==",
+  "dgSpecHash": "OF001Wp5qGGK2TH/cNc+zVSVgSkGyIBbCKmOPVLC6qmq2VMK7hstRm0f1rhfOkuCJvUXDmeeQlhqCihdY64XNw==",
   "success": true,
-  "projectFilePath": "c:\\Development\\ASP.NET CORE IDENTITY\\SQLIdentity\\WebApp.Identity\\WebApp.Identity.csproj",
+  "projectFilePath": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApp.Identity\\WebApp.Identity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joao.pereira\\.nuget\\packages\\dapper\\1.60.6\\dapper.1.60.6.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",

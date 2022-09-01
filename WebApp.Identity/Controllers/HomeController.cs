@@ -4,12 +4,12 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
 using WebApp.Identity.Models;
 
 namespace WebApp.Identity.Controllers
 {
-    [ApiController]
     public class HomeController : Controller
     {
         private readonly UserManager<MyUser> _userManager;
@@ -49,6 +49,11 @@ namespace WebApp.Identity.Controllers
             }
             return View();
 
+        }
+        [HttpGet]  
+        public async Task<IActionResult> Register()
+        {
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
