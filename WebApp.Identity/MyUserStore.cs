@@ -110,6 +110,7 @@ namespace WebApp.Identity
                     "[UserName] = @userName," +
                     "[NormalizedUserName] = @normalizedUserName," +
                     "[PasswordHash] = @passwordHash" +
+                    "WHERE Id = @id",
                     new
                     {
                         id = user.Id,
