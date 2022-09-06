@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -44,7 +45,7 @@ namespace WebApp.Identity.Controllers
                     identity.AddClaim(new Claim(ClaimTypes.NameIdentifier, user.Id));
                     identity.AddClaim(new Claim(ClaimTypes.Name, user.UserName));
 
-                    await HttpContext.SignInAsync("cookie", new ClaimsPrincipal(identity));
+                    await HttpContext.SignInAsync("cookies", new ClaimsPrincipal(identity));
 
                     return RedirectToAction("About");
                 }
@@ -84,7 +85,20 @@ namespace WebApp.Identity.Controllers
 
         }
         [HttpGet]
+        [Authorize]
         public async Task<IActionResult> Register()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult About()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult Success()
         {
             return View();
         }
