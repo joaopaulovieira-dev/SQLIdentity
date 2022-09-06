@@ -50,7 +50,7 @@ namespace WebApp.Identity.Controllers
             return View();
 
         }
-        [HttpGet]  
+        [HttpGet]
         public async Task<IActionResult> Register()
         {
             return View();

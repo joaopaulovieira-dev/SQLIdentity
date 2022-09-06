@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace WebApp.Identity
 {
-    public class MyUserStore : IUserStore<MyUser>
+    public class MyUserStore : IUserStore<MyUser>, IUserPasswordStore<MyUser>
     {
         public async Task<IdentityResult> CreateAsync(MyUser user, CancellationToken cancellationToken)
         {
@@ -52,10 +52,11 @@ namespace WebApp.Identity
         }
         public static DbConnection GetOpenConnection()
         {
-            var connection = new SqlConnection("Password=Hyundai@123;Persist Security Info=True;User ID=sa;Initial Catalog=LINE_CONTROL;Data Source=STATION9674");
+            var connection = new SqlConnection("Password=Hyundai@123;Persist Security Info=True;User ID=sa;Initial Catalog=Identity;Data Source=STATION9674");
             connection.Open();
             return connection;
         }
+
 
         public async Task<MyUser> FindByIdAsync(string userId, CancellationToken cancellationToken)
         {
@@ -69,7 +70,9 @@ namespace WebApp.Identity
         {
             using (var connection = GetOpenConnection())
             {
-                return await connection.QueryFirstOrDefaultAsync<MyUser>("SELECT * FROM [dbo].[Users] WHERE normalizedUserName = @name", new { name = normalizedUserName });
+                return await connection.QueryFirstOrDefaultAsync<MyUser>(
+                    "SELECT * FROM Users WHERE normalizedUserName = @name",
+                    new { name = normalizedUserName });
             }
         }
 
@@ -120,6 +123,22 @@ namespace WebApp.Identity
                     });
             }
             return IdentityResult.Success;
+        }
+
+        public Task SetPasswordHashAsync(MyUser user, string passwordHash, CancellationToken cancellationToken)
+        {
+            user.PasswordHash = passwordHash;
+            return Task.CompletedTask;
+        }
+
+        public Task<string> GetPasswordHashAsync(MyUser user, CancellationToken cancellationToken)
+        {
+            return Task.FromResult(user.PasswordHash);
+        }
+
+        public Task<bool> HasPasswordAsync(MyUser user, CancellationToken cancellationToken)
+        {
+            return Task.FromResult(user.PasswordHash != null);
         }
     }
 }
