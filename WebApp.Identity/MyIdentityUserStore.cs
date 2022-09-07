@@ -16,7 +16,7 @@ namespace WebApp.Identity
     {
         public MyIdentityUserStore(IdentityErrorDescriber describer) : base(describer)
         {
-            
+
         }
         
         public override IQueryable<IdentityUser> Users => throw new System.NotImplementedException();
