@@ -85,7 +85,6 @@ namespace WebApp.Identity.Controllers
 
         }
         [HttpGet]
-        [Authorize]
         public async Task<IActionResult> Register()
         {
             return View();

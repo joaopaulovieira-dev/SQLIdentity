@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace WebApp.Identity
@@ -38,10 +39,11 @@ namespace WebApp.Identity
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             var connectionString = @"Password=Hyundai@123;Persist Security Info=True;User ID=sa;Initial Catalog=Identity;Data Source=STATION9674";
+            var migrationAssembly = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
 
             services.AddDbContext<IdentityDbContext>(
-                opt => opt.UseSqlServer(connectionString)
-                );
+                opt => opt.UseSqlServer(connectionString, sql => sql.MigrationsAssembly(migrationAssembly)));
+                
 
             services.AddIdentityCore<IdentityUser>(options =>
             {
