@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -35,7 +36,7 @@ namespace WebApp.Identity
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            services.AddIdentityCore<MyUser>(options =>
+            services.AddIdentityCore<IdentityUser>(options =>
             {
                 // options.Password.RequireDigit = false;
                 // options.Password.RequireLowercase = false;
@@ -43,7 +44,9 @@ namespace WebApp.Identity
                 // options.Password.RequireNonAlphanumeric = false;
                 // options.Password.RequiredLength = 6;
             });
-            services.AddScoped<IUserStore<MyUser>, MyUserStore>();
+            services.AddScoped<IUserStore<IdentityUser>, 
+                UserOnlyStore<IdentityUser,
+                IdentityDbContext>>();
 
             services.AddAuthentication("cookies")
                 .AddCookie("cookies", options => options.LoginPath = "/Home/Login");
