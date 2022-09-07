@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -36,6 +37,12 @@ namespace WebApp.Identity
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+            var connectionString = @"Password=Hyundai@123;Persist Security Info=True;User ID=sa;Initial Catalog=Identity;Data Source=STATION9674";
+
+            services.AddDbContext<IdentityDbContext>(
+                opt => opt.UseSqlServer(connectionString)
+                );
+
             services.AddIdentityCore<IdentityUser>(options =>
             {
                 // options.Password.RequireDigit = false;
@@ -44,7 +51,7 @@ namespace WebApp.Identity
                 // options.Password.RequireNonAlphanumeric = false;
                 // options.Password.RequiredLength = 6;
             });
-            services.AddScoped<IUserStore<IdentityUser>, 
+            services.AddScoped<IUserStore<IdentityUser>,
                 UserOnlyStore<IdentityUser,
                 IdentityDbContext>>();
 

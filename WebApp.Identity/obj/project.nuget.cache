@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LXmHbvD8GkJSVqNuh9hirBLuHtK4xEEW9pDmyNN74gJlAdpVXoaAgKHq7Gx1OhH4Aiaux6h8/TyuLM2W3PkEtg==",
+  "dgSpecHash": "3UyoTmIIpm1Ipo0FKP211ZspNcjGQ5bSTmFHY9kNyWJjdMeZhKmZH5czWPsnvndPL3jQ5U/xxstRuteFZEPf/g==",
   "success": true,
   "projectFilePath": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApp.Identity\\WebApp.Identity.csproj",
   "expectedPackageFiles": [
@@ -112,7 +112,7 @@
     "C:\\Users\\joao.pereira\\.nuget\\packages\\microsoft.entityframeworkcore\\2.2.4\\microsoft.entityframeworkcore.2.2.4.nupkg.sha512",
     "C:\\Users\\joao.pereira\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\2.2.4\\microsoft.entityframeworkcore.abstractions.2.2.4.nupkg.sha512",
     "C:\\Users\\joao.pereira\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\2.2.4\\microsoft.entityframeworkcore.analyzers.2.2.4.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.entityframeworkcore.design\\2.2.0\\microsoft.entityframeworkcore.design.2.2.0.nupkg.sha512",
+    "C:\\Users\\joao.pereira\\.nuget\\packages\\microsoft.entityframeworkcore.design\\2.2.4\\microsoft.entityframeworkcore.design.2.2.4.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.entityframeworkcore.inmemory\\2.2.0\\microsoft.entityframeworkcore.inmemory.2.2.0.nupkg.sha512",
     "C:\\Users\\joao.pereira\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\2.2.4\\microsoft.entityframeworkcore.relational.2.2.4.nupkg.sha512",
     "C:\\Users\\joao.pereira\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\2.2.4\\microsoft.entityframeworkcore.sqlserver.2.2.4.nupkg.sha512",
