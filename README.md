@@ -11,7 +11,7 @@ Mergulhará na parte interna da framework. Em seguida, explorará seus vários p
 
 Por fim, descobrirá não apenas como estendê-lo, mas também quando realmente conseguir utilizá-lo de maneira eficiente. Quando tiver terminado este curso, será capaz de evitar muitas das armadilhas que vêm com o gerenciamento incorreto da framework que, de outra forma, causaria problemas quando você começar a aumentar e/ou dimensionar suas aplicações. Também terá uma boa base para um dia, quando necessário utilizar as versões futuras.
 
-- O que você aprenderá
+- O que podemos aprender:
   - Criar uma aplicação Web MVC utilizando Asp .NET Core Identity.
   - Utilizar o Asp .NET Core Identity para fornecer controle de Autenticação e Autorização.
   - Entender como trabalhar com Claims e Roles e Identidade para Autorização de Acesso.
