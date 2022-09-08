@@ -41,11 +41,11 @@ namespace WebApp.Identity
             var connectionString = @"Password=Hyundai@123;Persist Security Info=True;User ID=sa;Initial Catalog=Identity;Data Source=STATION9674";
             var migrationAssembly = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
 
-            services.AddDbContext<IdentityDbContext>(
+            services.AddDbContext<MyUserDbContext>(
                 opt => opt.UseSqlServer(connectionString, sql => sql.MigrationsAssembly(migrationAssembly)));
                 
 
-            services.AddIdentityCore<IdentityUser>(options =>
+            services.AddIdentityCore<MyUser>(options =>
             {
                 // options.Password.RequireDigit = false;
                 // options.Password.RequireLowercase = false;
@@ -53,9 +53,9 @@ namespace WebApp.Identity
                 // options.Password.RequireNonAlphanumeric = false;
                 // options.Password.RequiredLength = 6;
             });
-            services.AddScoped<IUserStore<IdentityUser>,
-                UserOnlyStore<IdentityUser,
-                IdentityDbContext>>();
+            services.AddScoped<IUserStore<MyUser>,
+                UserOnlyStore<MyUser,
+                MyUserDbContext>>();
 
             services.AddAuthentication("cookies")
                 .AddCookie("cookies", options => options.LoginPath = "/Home/Login");
