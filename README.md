@@ -19,3 +19,9 @@ Por fim, descobrirá não apenas como estendê-lo, mas também quando realmente 
 - Para quem é este conteúdo:
   - Aqueles que queiram controlar sua Aplicação feita em ASP .NET Core Identity.
   - Aqueles que queiram aprender um pouco sobre Identity com Entity Framework Core
+
+
+### Comando CLI dotnet ef
+
+- dotnet ef migrations add Initial
+- dotnet ef database update
