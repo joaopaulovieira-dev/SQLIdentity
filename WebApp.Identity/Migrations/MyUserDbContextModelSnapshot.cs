@@ -156,6 +156,8 @@ namespace WebApp.Identity.Migrations
                     b.Property<string>("NormalizedUserName")
                         .HasMaxLength(256);
 
+                    b.Property<string>("OrgId");
+
                     b.Property<string>("PasswordHash");
 
                     b.Property<string>("PhoneNumber");
@@ -179,7 +181,21 @@ namespace WebApp.Identity.Migrations
                         .HasName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
+                    b.HasIndex("OrgId");
+
                     b.ToTable("AspNetUsers");
+                });
+
+            modelBuilder.Entity("WebApp.Identity.Organization", b =>
+                {
+                    b.Property<string>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Name");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Organizations");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -225,6 +241,13 @@ namespace WebApp.Identity.Migrations
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("WebApp.Identity.MyUser", b =>
+                {
+                    b.HasOne("WebApp.Identity.Organization")
+                        .WithMany()
+                        .HasForeignKey("OrgId");
                 });
 #pragma warning restore 612, 618
         }
