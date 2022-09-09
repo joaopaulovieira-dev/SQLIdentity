@@ -49,6 +49,7 @@ namespace WebApp.Identity
             services.AddDbContext<MyUserDbContext>(
                 opt => opt.UseSqlServer(connectionString, sql => sql.MigrationsAssembly(migrationAssembly)));
 
+            services.AddScoped<IUserClaimsPrincipalFactory<MyUser>, MyUserClaimsPrincipalFactory>();
 
             services.AddIdentity<MyUser, IdentityRole>(options => { })
                 .AddEntityFrameworkStores<MyUserDbContext>();
