@@ -39,10 +39,10 @@ namespace WebApp.Identity
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             //DESKTOP TRABALHO
-            //var connectionString = @"Password=Hyundai@123;Persist Security Info=True;User ID=sa;Initial Catalog=Identity;Data Source=STATION9674";
+            var connectionString = @"Password=Hyundai@123;Persist Security Info=True;User ID=sa;Initial Catalog=Identity;Data Source=STATION9674";
 
             //NOTEBOOK
-            var connectionString = @"Password=33385412VR.jp@;Persist Security Info=True;User ID=sa;Initial Catalog=Identity;Data Source=NOTEBOOK-DELL";
+            //var connectionString = @"Password=33385412VR.jp@;Persist Security Info=True;User ID=sa;Initial Catalog=Identity;Data Source=NOTEBOOK-DELL";
 
             var migrationAssembly = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
 
@@ -50,20 +50,10 @@ namespace WebApp.Identity
                 opt => opt.UseSqlServer(connectionString, sql => sql.MigrationsAssembly(migrationAssembly)));
 
 
-            services.AddIdentityCore<MyUser>(options =>
-            {
-                // options.Password.RequireDigit = false;
-                // options.Password.RequireLowercase = false;
-                // options.Password.RequireUppercase = false;
-                // options.Password.RequireNonAlphanumeric = false;
-                // options.Password.RequiredLength = 6;
-            });
-            services.AddScoped<IUserStore<MyUser>,
-                UserOnlyStore<MyUser,
-                MyUserDbContext>>();
+            services.AddIdentity<MyUser, IdentityRole>(options => { })
+                .AddEntityFrameworkStores<MyUserDbContext>();
 
-            services.AddAuthentication("cookies")
-                .AddCookie("cookies", options => options.LoginPath = "/Home/Login");
+            services.ConfigureApplicationCookie(options => options.LoginPath = "/Home/Login");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
