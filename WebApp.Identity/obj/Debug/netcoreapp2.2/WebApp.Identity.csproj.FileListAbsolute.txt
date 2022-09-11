@@ -1,41 +1,3 @@
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\bin\Debug\netcoreapp2.2\appsettings.Development.json
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\bin\Debug\netcoreapp2.2\appsettings.json
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\bin\Debug\netcoreapp2.2\WebApp.Identity.deps.json
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\bin\Debug\netcoreapp2.2\WebApp.Identity.runtimeconfig.json
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\bin\Debug\netcoreapp2.2\WebApp.Identity.runtimeconfig.dev.json
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\bin\Debug\netcoreapp2.2\WebApp.Identity.dll
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\bin\Debug\netcoreapp2.2\WebApp.Identity.pdb
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\bin\Debug\netcoreapp2.2\WebApp.Identity.Views.dll
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\bin\Debug\netcoreapp2.2\WebApp.Identity.Views.pdb
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.csproj.AssemblyReference.cache
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.GeneratedMSBuildEditorConfig.editorconfig
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.AssemblyInfoInputs.cache
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.AssemblyInfo.cs
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.csproj.CoreCompileInputs.cache
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.RazorAssemblyInfo.cache
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.RazorAssemblyInfo.cs
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.TagHelpers.input.cache
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.TagHelpers.output.cache
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.RazorCoreGenerate.cache
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Home\About.cshtml.g.cs
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Home\Login.cshtml.g.cs
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.cshtml.g.cs
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Home\Register.cshtml.g.cs
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Home\Success.cshtml.g.cs
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.cshtml.g.cs
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.RazorTargetAssemblyInfo.cache
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.RazorTargetAssemblyInfo.cs
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.Views.pdb
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.dll
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.pdb
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.genruntimeconfig.cache
-D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.csproj.CopyComplete
 C:\Development\Asp.NET Core Identity\SQLIdentity\WebApp.Identity\bin\Debug\netcoreapp2.2\appsettings.Development.json
 C:\Development\Asp.NET Core Identity\SQLIdentity\WebApp.Identity\bin\Debug\netcoreapp2.2\appsettings.json
 C:\Development\Asp.NET Core Identity\SQLIdentity\WebApp.Identity\bin\Debug\netcoreapp2.2\WebApp.Identity.deps.json
@@ -74,3 +36,41 @@ C:\Development\Asp.NET Core Identity\SQLIdentity\WebApp.Identity\obj\Debug\netco
 C:\Development\Asp.NET Core Identity\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.pdb
 C:\Development\Asp.NET Core Identity\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.genruntimeconfig.cache
 C:\Development\Asp.NET Core Identity\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.csproj.CopyComplete
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.AssemblyInfoInputs.cache
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.AssemblyInfo.cs
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.csproj.CoreCompileInputs.cache
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.RazorAssemblyInfo.cache
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.RazorAssemblyInfo.cs
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\bin\Debug\netcoreapp2.2\appsettings.Development.json
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\bin\Debug\netcoreapp2.2\appsettings.json
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\bin\Debug\netcoreapp2.2\WebApp.Identity.deps.json
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\bin\Debug\netcoreapp2.2\WebApp.Identity.runtimeconfig.json
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\bin\Debug\netcoreapp2.2\WebApp.Identity.runtimeconfig.dev.json
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\bin\Debug\netcoreapp2.2\WebApp.Identity.dll
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\bin\Debug\netcoreapp2.2\WebApp.Identity.pdb
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\bin\Debug\netcoreapp2.2\WebApp.Identity.Views.dll
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\bin\Debug\netcoreapp2.2\WebApp.Identity.Views.pdb
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.csproj.AssemblyReference.cache
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.TagHelpers.input.cache
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.TagHelpers.output.cache
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.RazorCoreGenerate.cache
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Home\About.cshtml.g.cs
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Home\Login.cshtml.g.cs
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Home\Register.cshtml.g.cs
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Home\Success.cshtml.g.cs
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.cshtml.g.cs
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.RazorTargetAssemblyInfo.cache
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.RazorTargetAssemblyInfo.cs
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.Views.pdb
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.dll
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.pdb
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.genruntimeconfig.cache
+D:\OneDrive\Development\.NET\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\WebApp.Identity.csproj.CopyComplete

@@ -10,7 +10,7 @@ using WebApp.Identity;
 namespace WebApp.Identity.Migrations
 {
     [DbContext(typeof(MyUserDbContext))]
-    [Migration("20220909180956_Initial")]
+    [Migration("20220911015248_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
