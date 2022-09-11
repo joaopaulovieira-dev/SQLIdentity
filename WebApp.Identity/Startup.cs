@@ -51,8 +51,13 @@ namespace WebApp.Identity
 
             services.AddScoped<IUserClaimsPrincipalFactory<MyUser>, MyUserClaimsPrincipalFactory>();
 
+            services.Configure<DataProtectionTokenProviderOptions>(
+                options => options.TokenLifespan = TimeSpan.FromHours(3)
+                );
+
             services.AddIdentity<MyUser, IdentityRole>(options => { })
-                .AddEntityFrameworkStores<MyUserDbContext>();
+                .AddEntityFrameworkStores<MyUserDbContext>()
+                .AddDefaultTokenProviders();
 
             services.ConfigureApplicationCookie(options => options.LoginPath = "/Home/Login");
         }
