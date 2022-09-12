@@ -106,7 +106,24 @@ namespace WebApp.Identity.Controllers
             return View();
 
         }
-        
+
+        [HttpGet]
+        public async Task<IActionResult> ConfirmEmailAddress(string token, string email)
+        {
+            var user = await _userManager.FindByEmailAsync(email);
+            
+            if (user != null)
+            {
+                var result = await _userManager.ConfirmEmailAsync(user, token);
+                
+                if (result.Succeeded)
+                {
+                    return View("Success");
+                }
+            }
+            return View("Error");
+        }        
+
         [HttpGet]
         public async Task<IActionResult> Register()
         {
