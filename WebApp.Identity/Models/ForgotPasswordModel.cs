@@ -11,5 +11,9 @@ namespace WebApp.Identity.Models
         [Required]
         [EmailAddress]
         public string Email { get; set; }
+
+        public class model
+        {
+        }
     }
 }

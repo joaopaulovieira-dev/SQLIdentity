@@ -39,10 +39,10 @@ namespace WebApp.Identity
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             //DESKTOP TRABALHO
-            //var connectionString = @"Password=Hyundai@123;Persist Security Info=True;User ID=sa;Initial Catalog=Identity;Data Source=STATION9674";
+            var connectionString = @"Password=Hyundai@123;Persist Security Info=True;User ID=sa;Initial Catalog=Identity;Data Source=STATION9674";
 
             //NOTEBOOK
-            var connectionString = @"Password=33385412VR.jp@;Persist Security Info=True;User ID=sa;Initial Catalog=Identity;Data Source=NOTEBOOK-DELL";
+            //var connectionString = @"Password=33385412VR.jp@;Persist Security Info=True;User ID=sa;Initial Catalog=Identity;Data Source=NOTEBOOK-DELL";
 
             var migrationAssembly = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
 
