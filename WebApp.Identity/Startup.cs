@@ -55,10 +55,17 @@ namespace WebApp.Identity
                 options => options.TokenLifespan = TimeSpan.FromHours(3)
                 );
 
-            services.AddIdentity<MyUser, IdentityRole>(options => { })
+            services.AddIdentity<MyUser, IdentityRole>(options => 
+            {
+                options.SignIn.RequireConfirmedEmail = true;
+                //options.Password.RequireDigit = false;
+                //options.Password.RequireLowercase = false;
+                //options.Password.RequireUppercase = false;
+                //options.Password.RequireNonAlphanumeric = false;
+                //options.Password.RequiredLength = 6;
+            })
                 .AddEntityFrameworkStores<MyUserDbContext>()
                 .AddDefaultTokenProviders();
-
             services.ConfigureApplicationCookie(options => options.LoginPath = "/Home/Login");
         }
 
