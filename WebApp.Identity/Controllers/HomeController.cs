@@ -84,6 +84,7 @@ namespace WebApp.Identity.Controllers
             return View();
 
         }
+        
         [HttpGet]
         public async Task<IActionResult> Register()
         {
@@ -118,13 +119,14 @@ namespace WebApp.Identity.Controllers
                     //TODO: Implementar uma view no MVC que recebe uma string que informe usuário que não foi encontrado.
                 }
             }
+
             return View();
         }
 
         [HttpGet]
-        public async Task<IActionResult> ResetPassword()
+        public async Task<IActionResult> ResetPassword(string token, string email)
         {
-            return View();
+            return View(new ResetPasswordModel { Token = token, Email = email });
         }
 
         [HttpPost]
@@ -132,11 +134,12 @@ namespace WebApp.Identity.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = await _userManager.FindByNameAsync(model.Email);
+                var user = await _userManager.FindByEmailAsync(model.Email);
 
                 if (user != null)
                 {
-                    var result = await _userManager.ResetPasswordAsync(user, model.Token, model.Password);
+                    var result = await _userManager.ResetPasswordAsync(user,
+                        model.Token, model.Password);
 
                     if (!result.Succeeded)
                     {
@@ -146,6 +149,7 @@ namespace WebApp.Identity.Controllers
                         }
                         return View();
                     }
+
                     return View("Success");
                 }
                 ModelState.AddModelError("", "Invalid Request");
