@@ -44,12 +44,12 @@ namespace WebApp.Identity.Controllers
             if (ModelState.IsValid)
             {
                 var signInResult = await _signInManager.PasswordSignInAsync(model.UserName, model.Password, false, false);
-                    
+
                 if (signInResult.Succeeded)
-                { 
-                return RedirectToAction("About");
+                {
+                    return RedirectToAction("About");
                 }
-                
+
                 ModelState.AddModelError("", "Usuário ou senha inválido. ");
             }
             return View();
@@ -96,7 +96,7 @@ namespace WebApp.Identity.Controllers
             return View();
         }
 
-        [HttpPost]  
+        [HttpPost]
         public async Task<IActionResult> ForgotPassword(ForgotPasswordModel model)
         {
             if (ModelState.IsValid)
@@ -106,12 +106,19 @@ namespace WebApp.Identity.Controllers
                 if (user != null)
                 {
                     var token = await _userManager.GeneratePasswordResetTokenAsync(user);
-                    var resetURL = Url.Action("ResetPassword", "Home",  
-                        new {token = token, email = model.Email}, Request.Scheme);
+                    var resetURL = Url.Action("ResetPassword", "Home",
+                        new { token = token, email = model.Email }, Request.Scheme);
 
                     System.IO.File.WriteAllText("resetLink.txt", resetURL);
+
+                    return View("Success");
+                }
+                else
+                {
+                    //TODO: Implementar uma view no MVC que recebe uma string que informe usuário que não foi encontrado.
                 }
             }
+            return View();
         }
 
         [HttpGet]
@@ -121,12 +128,29 @@ namespace WebApp.Identity.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> ResetPassword(ResetPasswordModel)
+        public async Task<IActionResult> ResetPassword(ResetPasswordModel model)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-                
+                var user = await _userManager.FindByNameAsync(model.Email);
+
+                if (user != null)
+                {
+                    var result = await _userManager.ResetPasswordAsync(user, model.Token, model.Password);
+
+                    if (!result.Succeeded)
+                    {
+                        foreach (var erro in result.Errors)
+                        {
+                            ModelState.AddModelError("", erro.Description);
+                        }
+                        return View();
+                    }
+                    return View("Success");
+                }
+                ModelState.AddModelError("", "Invalid Request");
             }
+            return View();
         }
 
         [HttpGet]
