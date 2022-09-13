@@ -248,7 +248,41 @@ namespace WebApp.Identity.Controllers
         [HttpPost]
         public async Task<IActionResult> TwoFactor(TwoFactorModel model)
         {
-            return View();        }
+            var result = await HttpContext.AuthenticateAsync(IdentityConstants.TwoFactorUserIdScheme);
+            if (!result.Succeeded)
+            {
+                ModelState.AddModelError("", "Seu token expirou!");
+                return View();
+            }
+
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.FindByIdAsync(result.Principal.FindFirstValue("sub"));
+                if (user != null)
+                {
+                    var isValid = await _userManager.VerifyTwoFactorTokenAsync(
+                        user,
+                        result.Principal.FindFirstValue("amr"), model.Token);
+
+                    if (isValid)
+                    {
+                        await HttpContext.SignOutAsync(IdentityConstants.TwoFactorUserIdScheme);
+
+                        var claimsPrincipal = await _userClaimsPrincipalFactory.CreateAsync(user);
+                        await HttpContext.SignInAsync(IdentityConstants.ApplicationScheme, claimsPrincipal);
+
+                        return RedirectToAction("About");
+                    }
+
+                    ModelState.AddModelError("", "Invalid Token");
+                    return View();
+                }
+
+                ModelState.AddModelError("", "Invalid Request");
+            }
+
+            return View();
+        }
 
         [HttpGet]
         [Authorize]
