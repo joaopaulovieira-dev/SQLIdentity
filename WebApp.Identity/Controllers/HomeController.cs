@@ -64,6 +64,8 @@ namespace WebApp.Identity.Controllers
                             if (validator.Contains("Email"))
                             {
                                 var token = await _userManager.GenerateTwoFactorTokenAsync(user, "Email");
+                                
+                                //TODO: Enviar o token por e-mail ou celular.
 
                                 System.IO.File.WriteAllText("email2sv.txt", token);
 

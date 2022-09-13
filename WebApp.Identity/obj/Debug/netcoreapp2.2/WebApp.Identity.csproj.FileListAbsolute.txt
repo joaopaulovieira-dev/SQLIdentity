@@ -63,6 +63,7 @@ C:\Development\Asp.NET Core Identity\SQLIdentity\WebApp.Identity\obj\Debug\netco
 C:\Development\Asp.NET Core Identity\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Home\Register.cshtml.g.cs
 C:\Development\Asp.NET Core Identity\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Home\ResetPassword.cshtml.g.cs
 C:\Development\Asp.NET Core Identity\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Home\Success.cshtml.g.cs
+C:\Development\Asp.NET Core Identity\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Home\TwoFactor.cshtml.g.cs
 C:\Development\Asp.NET Core Identity\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Development\Asp.NET Core Identity\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
 C:\Development\Asp.NET Core Identity\SQLIdentity\WebApp.Identity\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
