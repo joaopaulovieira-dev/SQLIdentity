@@ -240,6 +240,17 @@ namespace WebApp.Identity.Controllers
         }
 
         [HttpGet]
+        public async Task<IActionResult> TwoFactor()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> TwoFactor(TwoFactorModel model)
+        {
+            return View();        }
+
+        [HttpGet]
         [Authorize]
         public IActionResult About()
         {
