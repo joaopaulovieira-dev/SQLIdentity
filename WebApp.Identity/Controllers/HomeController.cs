@@ -45,20 +45,64 @@ namespace WebApp.Identity.Controllers
             {
                 var user = await _userManager.FindByNameAsync(model.UserName);
 
-                if (user != null && await _userManager.CheckPasswordAsync(user, model.Password))
+                if (user != null && !await _userManager.IsLockedOutAsync(user))
                 {
-                    if (!await _userManager.IsEmailConfirmedAsync(user))
+                    if (await _userManager.CheckPasswordAsync(user, model.Password))
                     {
-                        ModelState.AddModelError("", "E-mail não é válido.");
-                        return View();
-                    }   
-                    var principal = await _userClaimsPrincipalFactory.CreateAsync(user);
-                    await HttpContext.SignInAsync("Identity.Application", principal);
-                    return RedirectToAction("About");
-                }   
-                ModelState.AddModelError("", "Usuário ou senha inválido. ");
+                        if (!await _userManager.IsEmailConfirmedAsync(user))
+                        {
+                            ModelState.AddModelError("", "E-mail não está Válido!");
+                            return View();
+                        }
+
+                        await _userManager.ResetAccessFailedCountAsync(user);
+
+                        if (await _userManager.GetTwoFactorEnabledAsync(user))
+                        {
+                            var validator = await _userManager.GetValidTwoFactorProvidersAsync(user);
+
+                            if (validator.Contains("Email"))
+                            {
+                                var token = await _userManager.GenerateTwoFactorTokenAsync(user, "Email");
+
+                                System.IO.File.WriteAllText("email2sv.txt", token);
+
+                                await HttpContext.SignInAsync(IdentityConstants.TwoFactorUserIdScheme, Store2FA(user.Id, "Email"));
+
+                                return RedirectToAction("TwoFactor");
+                            }
+                        }
+
+                        var principal = await _userClaimsPrincipalFactory.CreateAsync(user);
+
+                        await HttpContext.SignInAsync(IdentityConstants.ApplicationScheme, principal);
+
+                        return RedirectToAction("About");
+                    }
+
+                    await _userManager.AccessFailedAsync(user);
+
+                    if (await _userManager.IsLockedOutAsync(user))
+                    {
+                        //Email deve ser enviando com sugestão de Mudança de Senha!
+                    }
+                }
+
+                ModelState.AddModelError("", "Usuário ou Senha Invalida");
             }
+
             return View();
+        }
+
+        public ClaimsPrincipal Store2FA(string userId, string provider)
+        {
+            var identity = new ClaimsIdentity(new List<Claim>
+            {
+                new Claim("sub", userId),
+                new Claim("amr", provider)
+            }, IdentityConstants.TwoFactorUserIdScheme);
+
+            return new ClaimsPrincipal(identity);
         }
 
         [HttpGet]
@@ -110,18 +154,18 @@ namespace WebApp.Identity.Controllers
         public async Task<IActionResult> ConfirmEmailAddress(string token, string email)
         {
             var user = await _userManager.FindByEmailAsync(email);
-            
+
             if (user != null)
             {
                 var result = await _userManager.ConfirmEmailAsync(user, token);
-                
+
                 if (result.Succeeded)
                 {
                     return View("Success");
                 }
             }
             return View("Error");
-        }        
+        }
 
         [HttpGet]
         public async Task<IActionResult> Register()

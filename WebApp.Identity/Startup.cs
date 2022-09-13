@@ -35,7 +35,6 @@ namespace WebApp.Identity
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             //DESKTOP TRABALHO
@@ -43,17 +42,15 @@ namespace WebApp.Identity
 
             //NOTEBOOK
             //var connectionString = @"Password=33385412VR.jp@;Persist Security Info=True;User ID=sa;Initial Catalog=Identity;Data Source=NOTEBOOK-DELL";
-
-            var migrationAssembly = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
+            
+            var migrationAssembly = typeof(Startup)
+                .GetTypeInfo().Assembly
+                .GetName().Name;
 
             services.AddDbContext<MyUserDbContext>(
-                opt => opt.UseSqlServer(connectionString, sql => sql.MigrationsAssembly(migrationAssembly)));
-
-            services.AddScoped<IUserClaimsPrincipalFactory<MyUser>, MyUserClaimsPrincipalFactory>();
-
-            services.Configure<DataProtectionTokenProviderOptions>(
-                options => options.TokenLifespan = TimeSpan.FromHours(3)
-                );
+                opt => opt.UseSqlServer(connectionString, sql =>
+                sql.MigrationsAssembly(migrationAssembly))
+            );
 
             services.AddIdentity<MyUser, IdentityRole>(options =>
             {
@@ -70,9 +67,18 @@ namespace WebApp.Identity
             })
             .AddEntityFrameworkStores<MyUserDbContext>()
             .AddDefaultTokenProviders()
-            .AddPasswordValidator<DoesNotContainPasswordValidator<MyUser>>();   
-            
-            services.ConfigureApplicationCookie(options => options.LoginPath = "/Home/Login");
+            .AddPasswordValidator<DoesNotContainPasswordValidator<MyUser>>();
+
+            services.AddScoped<IUserClaimsPrincipalFactory<MyUser>,
+                MyUserClaimsPrincipalFactory>();
+
+            services.Configure<DataProtectionTokenProviderOptions>(
+                options => options.TokenLifespan = TimeSpan.FromHours(3)
+            );
+
+            services.ConfigureApplicationCookie(options =>
+                options.LoginPath = "/Home/Login"
+            );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
