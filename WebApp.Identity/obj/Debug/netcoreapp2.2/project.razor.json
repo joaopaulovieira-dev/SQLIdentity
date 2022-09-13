@@ -12,7 +12,7 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 1051958120,
+        "HashCode": -1998274026,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -209,7 +209,7 @@
         }
       },
       {
-        "HashCode": 750783665,
+        "HashCode": 670391471,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.CacheTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -336,7 +336,7 @@
         }
       },
       {
-        "HashCode": 1306196157,
+        "HashCode": -1219012870,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.DistributedCacheTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -468,7 +468,7 @@
         }
       },
       {
-        "HashCode": 1993654484,
+        "HashCode": 1543424779,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.EnvironmentTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -514,7 +514,7 @@
         }
       },
       {
-        "HashCode": 881138474,
+        "HashCode": -1044072967,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.FormActionTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -931,7 +931,7 @@
         }
       },
       {
-        "HashCode": 1223537226,
+        "HashCode": 202734700,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -1033,7 +1033,7 @@
         }
       },
       {
-        "HashCode": -1688275041,
+        "HashCode": -903284432,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ImageTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -1079,7 +1079,7 @@
         }
       },
       {
-        "HashCode": -1794948003,
+        "HashCode": -1677396420,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -1149,7 +1149,7 @@
         }
       },
       {
-        "HashCode": 368276201,
+        "HashCode": -1008202958,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -1182,7 +1182,7 @@
         }
       },
       {
-        "HashCode": -1536902200,
+        "HashCode": 813217760,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -1378,7 +1378,7 @@
         }
       },
       {
-        "HashCode": -767888596,
+        "HashCode": 424164653,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -1406,7 +1406,7 @@
         }
       },
       {
-        "HashCode": 2129976113,
+        "HashCode": -1906553969,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -1487,7 +1487,7 @@
         }
       },
       {
-        "HashCode": -2111017414,
+        "HashCode": 2071049280,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ScriptTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -1640,7 +1640,7 @@
         }
       },
       {
-        "HashCode": 86559946,
+        "HashCode": -982654870,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -1699,7 +1699,7 @@
         }
       },
       {
-        "HashCode": -1777870798,
+        "HashCode": 1280833257,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.TextAreaTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -1741,7 +1741,7 @@
         }
       },
       {
-        "HashCode": -781109964,
+        "HashCode": 1829305717,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ValidationMessageTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -1773,7 +1773,7 @@
         }
       },
       {
-        "HashCode": -131821299,
+        "HashCode": -1698203095,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ValidationSummaryTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
@@ -1807,7 +1807,7 @@
         }
       },
       {
-        "HashCode": 1540841222,
+        "HashCode": -1810615257,
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.SpaServices.Prerendering.PrerenderTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.SpaServices",
@@ -1872,13 +1872,23 @@
   "RootNamespace": "WebApp.Identity",
   "Documents": [
     {
-      "FilePath": "c:\\Development\\ASP.NET CORE IDENTITY\\SQLIdentity\\WebApp.Identity\\Views\\Home\\ForgotPassword.cshtml",
-      "TargetPath": "Views\\Home\\ForgotPassword.cshtml",
+      "FilePath": "c:\\Development\\ASP.NET CORE IDENTITY\\SQLIdentity\\WebApp.Identity\\Views\\Home\\About.cshtml",
+      "TargetPath": "Views\\Home\\About.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Development\\ASP.NET CORE IDENTITY\\SQLIdentity\\WebApp.Identity\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FilePath": "c:\\Development\\ASP.NET CORE IDENTITY\\SQLIdentity\\WebApp.Identity\\Views\\Home\\Success.cshtml",
+      "TargetPath": "Views\\Home\\Success.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Development\\ASP.NET CORE IDENTITY\\SQLIdentity\\WebApp.Identity\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Development\\ASP.NET CORE IDENTITY\\SQLIdentity\\WebApp.Identity\\Views\\Home\\ResetPassword.cshtml",
+      "TargetPath": "Views\\Home\\ResetPassword.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -1892,8 +1902,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Development\\ASP.NET CORE IDENTITY\\SQLIdentity\\WebApp.Identity\\Views\\Shared\\_CookieConsentPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FilePath": "c:\\Development\\ASP.NET CORE IDENTITY\\SQLIdentity\\WebApp.Identity\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -1902,28 +1912,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Development\\ASP.NET CORE IDENTITY\\SQLIdentity\\WebApp.Identity\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Development\\ASP.NET CORE IDENTITY\\SQLIdentity\\WebApp.Identity\\Views\\Home\\ResetPassword.cshtml",
-      "TargetPath": "Views\\Home\\ResetPassword.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Development\\ASP.NET CORE IDENTITY\\SQLIdentity\\WebApp.Identity\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Development\\ASP.NET CORE IDENTITY\\SQLIdentity\\WebApp.Identity\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Development\\ASP.NET CORE IDENTITY\\SQLIdentity\\WebApp.Identity\\Views\\Home\\Register.cshtml",
-      "TargetPath": "Views\\Home\\Register.cshtml",
+      "FilePath": "c:\\Development\\ASP.NET CORE IDENTITY\\SQLIdentity\\WebApp.Identity\\Views\\Shared\\_CookieConsentPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -1932,13 +1922,23 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Development\\ASP.NET CORE IDENTITY\\SQLIdentity\\WebApp.Identity\\Views\\Home\\About.cshtml",
-      "TargetPath": "Views\\Home\\About.cshtml",
+      "FilePath": "c:\\Development\\ASP.NET CORE IDENTITY\\SQLIdentity\\WebApp.Identity\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Development\\ASP.NET CORE IDENTITY\\SQLIdentity\\WebApp.Identity\\Views\\Home\\Success.cshtml",
-      "TargetPath": "Views\\Home\\Success.cshtml",
+      "FilePath": "c:\\Development\\ASP.NET CORE IDENTITY\\SQLIdentity\\WebApp.Identity\\Views\\Home\\Register.cshtml",
+      "TargetPath": "Views\\Home\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Development\\ASP.NET CORE IDENTITY\\SQLIdentity\\WebApp.Identity\\Views\\Home\\ForgotPassword.cshtml",
+      "TargetPath": "Views\\Home\\ForgotPassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Development\\ASP.NET CORE IDENTITY\\SQLIdentity\\WebApp.Identity\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],

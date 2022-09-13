@@ -100,7 +100,6 @@ namespace WebApp.Identity.Controllers
                         }
                     }
                 }
-
                 return View("Success");
             }
             return View();
