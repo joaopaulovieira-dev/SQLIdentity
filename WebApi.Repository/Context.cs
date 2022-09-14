@@ -33,7 +33,7 @@ namespace WebAPI.Repository
 
             builder.Entity<Organization>(org =>
             {
-                org.ToTable("Organization");
+                org.ToTable("Organizations");
                 org.HasKey(x => x.Id);
 
                 org.HasMany<User>()

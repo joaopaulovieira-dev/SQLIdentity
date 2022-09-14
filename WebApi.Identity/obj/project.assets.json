@@ -5464,6 +5464,33 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "WebApi.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.2.0"
+        },
+        "compile": {
+          "bin/placeholder/WebApi.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebApi.Domain.dll": {}
+        }
+      },
+      "WebApi.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.2.0",
+          "WebApi.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WebApi.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebApi.Repository.dll": {}
+        }
       }
     }
   },
@@ -13107,6 +13134,16 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "WebApi.Domain/1.0.0": {
+      "type": "project",
+      "path": "../WebApi.Domain/WebApi.Domain.csproj",
+      "msbuildProject": "../WebApi.Domain/WebApi.Domain.csproj"
+    },
+    "WebApi.Repository/1.0.0": {
+      "type": "project",
+      "path": "../WebApi.Repository/WebApi.Repository.csproj",
+      "msbuildProject": "../WebApi.Repository/WebApi.Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -13117,7 +13154,9 @@
       "Microsoft.EntityFrameworkCore.Design >= 2.2.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.2.4",
       "Microsoft.Extensions.Identity.Core >= 2.2.0",
-      "Microsoft.NETCore.App >= 2.2.0"
+      "Microsoft.NETCore.App >= 2.2.0",
+      "WebApi.Domain >= 1.0.0",
+      "WebApi.Repository >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -13154,7 +13193,14 @@
       "frameworks": {
         "netcoreapp2.2": {
           "targetAlias": "netcoreapp2.2",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Domain\\WebApi.Domain.csproj": {
+              "projectPath": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Domain\\WebApi.Domain.csproj"
+            },
+            "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Repository\\WebApi.Repository.csproj": {
+              "projectPath": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Repository\\WebApi.Repository.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
