@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dsF2wq1A8T1t44ESHA9HeA/NIvLToX8bVwTZRUPrQwDkCC7peuKamcVpoedZUc+YVMulBU5osaalxHs66aJIng==",
+  "dgSpecHash": "XppKfIgKGWjECKKJFKrzYg2C+sGDJG09kNSM92rA0mtQajiIXL8ZYErdJpczc1lUlepJzaxkrz16DLVw4Wzg4g==",
   "success": true,
   "projectFilePath": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Domain\\WebApi.Domain.csproj",
   "expectedPackageFiles": [
