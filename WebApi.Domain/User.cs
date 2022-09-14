@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace WebApi.Domain
 {
-    public class User : IdentityUser
+    public class User : IdentityUser<int>
     {
         public string NomeCompleto { get; set; }
 

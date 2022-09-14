@@ -24,8 +24,7 @@ namespace WebApp.Identity
                 .WithOne()
                 .HasForeignKey(x => x.OrgId)
                 .IsRequired(false);
-            }
-            );
+            });
         }
     }
 }
