@@ -1,0 +1,10 @@
+C:\Development\Asp.NET Core Identity\SQLIdentity\WebAPI.Domain\bin\Debug\netcoreapp2.2\WebAPI.Domain.deps.json
+C:\Development\Asp.NET Core Identity\SQLIdentity\WebAPI.Domain\bin\Debug\netcoreapp2.2\WebAPI.Domain.dll
+C:\Development\Asp.NET Core Identity\SQLIdentity\WebAPI.Domain\bin\Debug\netcoreapp2.2\WebAPI.Domain.pdb
+C:\Development\Asp.NET Core Identity\SQLIdentity\WebAPI.Domain\obj\Debug\netcoreapp2.2\WebAPI.Domain.csproj.AssemblyReference.cache
+C:\Development\Asp.NET Core Identity\SQLIdentity\WebAPI.Domain\obj\Debug\netcoreapp2.2\WebAPI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Development\Asp.NET Core Identity\SQLIdentity\WebAPI.Domain\obj\Debug\netcoreapp2.2\WebAPI.Domain.AssemblyInfoInputs.cache
+C:\Development\Asp.NET Core Identity\SQLIdentity\WebAPI.Domain\obj\Debug\netcoreapp2.2\WebAPI.Domain.AssemblyInfo.cs
+C:\Development\Asp.NET Core Identity\SQLIdentity\WebAPI.Domain\obj\Debug\netcoreapp2.2\WebAPI.Domain.csproj.CoreCompileInputs.cache
+C:\Development\Asp.NET Core Identity\SQLIdentity\WebAPI.Domain\obj\Debug\netcoreapp2.2\WebAPI.Domain.dll
+C:\Development\Asp.NET Core Identity\SQLIdentity\WebAPI.Domain\obj\Debug\netcoreapp2.2\WebAPI.Domain.pdb

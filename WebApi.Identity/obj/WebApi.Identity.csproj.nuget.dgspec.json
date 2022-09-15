@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Identity\\WebApi.Identity.csproj": {}
+    "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebAPI.Identity\\WebAPI.Identity.csproj": {}
   },
   "projects": {
-    "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Domain\\WebApi.Domain.csproj": {
+    "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebAPI.Domain\\WebAPI.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Domain\\WebApi.Domain.csproj",
-        "projectName": "WebApi.Domain",
-        "projectPath": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Domain\\WebApi.Domain.csproj",
+        "projectUniqueName": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebAPI.Domain\\WebAPI.Domain.csproj",
+        "projectName": "WebAPI.Domain",
+        "projectPath": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebAPI.Domain\\WebAPI.Domain.csproj",
         "packagesPath": "C:\\Users\\joao.pereira\\.nuget\\packages\\",
-        "outputPath": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Domain\\obj\\",
+        "outputPath": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebAPI.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -23,7 +23,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "netcoreapp2.2"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -31,8 +31,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.0": {
-            "targetAlias": "netstandard2.0",
+          "netcoreapp2.2": {
+            "targetAlias": "netcoreapp2.2",
             "projectReferences": {}
           }
         },
@@ -43,17 +43,17 @@
         }
       },
       "frameworks": {
-        "netstandard2.0": {
-          "targetAlias": "netstandard2.0",
+        "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[2.2.0, )"
             },
-            "NETStandard.Library": {
+            "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.0.3, )",
+              "version": "[2.2.0, )",
               "autoReferenced": true
             }
           },
@@ -63,23 +63,22 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.412\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Identity\\WebApi.Identity.csproj": {
+    "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebAPI.Identity\\WebAPI.Identity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Identity\\WebApi.Identity.csproj",
-        "projectName": "WebApi.Identity",
-        "projectPath": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Identity\\WebApi.Identity.csproj",
+        "projectUniqueName": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebAPI.Identity\\WebAPI.Identity.csproj",
+        "projectName": "WebAPI.Identity",
+        "projectPath": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebAPI.Identity\\WebAPI.Identity.csproj",
         "packagesPath": "C:\\Users\\joao.pereira\\.nuget\\packages\\",
-        "outputPath": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Identity\\obj\\",
+        "outputPath": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebAPI.Identity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -102,11 +101,11 @@
           "netcoreapp2.2": {
             "targetAlias": "netcoreapp2.2",
             "projectReferences": {
-              "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Domain\\WebApi.Domain.csproj": {
-                "projectPath": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Domain\\WebApi.Domain.csproj"
+              "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Domain\\WebAPI.Domain.csproj": {
+                "projectPath": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Domain\\WebAPI.Domain.csproj"
               },
-              "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Repository\\WebApi.Repository.csproj": {
-                "projectPath": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Repository\\WebApi.Repository.csproj"
+              "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Repository\\WebAPI.Repository.csproj": {
+                "projectPath": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Repository\\WebAPI.Repository.csproj"
               }
             }
           }
@@ -164,23 +163,22 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.412\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Repository\\WebApi.Repository.csproj": {
+    "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebAPI.Repository\\WebAPI.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Repository\\WebApi.Repository.csproj",
-        "projectName": "WebApi.Repository",
-        "projectPath": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Repository\\WebApi.Repository.csproj",
+        "projectUniqueName": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebAPI.Repository\\WebAPI.Repository.csproj",
+        "projectName": "WebAPI.Repository",
+        "projectPath": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebAPI.Repository\\WebAPI.Repository.csproj",
         "packagesPath": "C:\\Users\\joao.pereira\\.nuget\\packages\\",
-        "outputPath": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Repository\\obj\\",
+        "outputPath": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebAPI.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -192,7 +190,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "netcoreapp2.2"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -200,11 +198,11 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.0": {
-            "targetAlias": "netstandard2.0",
+          "netcoreapp2.2": {
+            "targetAlias": "netcoreapp2.2",
             "projectReferences": {
-              "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Domain\\WebApi.Domain.csproj": {
-                "projectPath": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Domain\\WebApi.Domain.csproj"
+              "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Domain\\WebAPI.Domain.csproj": {
+                "projectPath": "C:\\Development\\Asp.NET Core Identity\\SQLIdentity\\WebApi.Domain\\WebAPI.Domain.csproj"
               }
             }
           }
@@ -216,17 +214,17 @@
         }
       },
       "frameworks": {
-        "netstandard2.0": {
-          "targetAlias": "netstandard2.0",
+        "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[2.2.0, )"
             },
-            "NETStandard.Library": {
+            "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.0.3, )",
+              "version": "[2.2.0, )",
               "autoReferenced": true
             }
           },
@@ -236,12 +234,11 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.412\\RuntimeIdentifierGraph.json"
         }
       }
     }
