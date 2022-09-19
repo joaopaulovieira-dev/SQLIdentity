@@ -35,23 +35,51 @@ namespace WebAPI.Identity.Controllers
             _config = config;
             _userManager = userManager;
             _signInManager = signInManager;
+            _mapper = mapper;
         }
-
-        // GET: api/<UserController>
+        // GET: api/User
         [HttpGet]
-        public IEnumerable<string> Get()
+        [AllowAnonymous]
+        public IActionResult Get()
         {
-            return new string[] { "value1", "value2" };
+            return Ok(new UserDto());
         }
 
-        // GET api/<UserController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        // GET: api/User/5
+        [HttpPost("Login")]
+        [AllowAnonymous]
+        public async Task<IActionResult> Login(UserLoginDto userLogin)
         {
-            return "value";
+            try
+            {
+                var user = await _userManager.FindByNameAsync(userLogin.UserName);
+
+                var result = await _signInManager
+                    .CheckPasswordSignInAsync(user, userLogin.Password, false);
+
+                if (result.Succeeded)
+                {
+                    var appUser = await _userManager.Users
+                            .FirstOrDefaultAsync(u => u.NormalizedUserName == user.UserName.ToUpper());
+
+                    var userToReturn = _mapper.Map<UserDto>(appUser);
+
+                    return Ok(new
+                    {
+                        token = GenerateJWToken(appUser).Result,
+                        user = userToReturn
+                    });
+                }
+
+                return Unauthorized();
+            }
+            catch (Exception ex)
+            {
+                return this.StatusCode(StatusCodes.Status500InternalServerError,
+                    $"ERROR {ex.Message}");
+            }
         }
 
-        // POST api/<UserController>
         // POST: api/User
         [HttpPost("Register")]
         [AllowAnonymous]
@@ -91,7 +119,7 @@ namespace WebAPI.Identity.Controllers
             catch (Exception ex)
             {
                 return this.StatusCode(StatusCodes.Status500InternalServerError,
-                    $"ERROR: {ex.Message}");
+                    $"ERROR {ex.Message}");
             }
         }
 
@@ -129,14 +157,13 @@ namespace WebAPI.Identity.Controllers
             return tokenHandler.WriteToken(token);
         }
 
-
-        // PUT api/<UserController>/5
+        // PUT: api/User/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/<UserController>/5
+        // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
